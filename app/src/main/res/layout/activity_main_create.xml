@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context="com.example.tubes_aplikasi_berita.MainCreate">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create News"
+            android:textColor="#FFFF"
+            android:layout_marginBottom="100dp"
+            android:textSize="30sp"/>
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="-90dp"
+            android:src="@drawable/ic_image_input" />
+        <EditText
+            android:id="@+id/update_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Judul Berita" />
+
+        <EditText
+            android:id="@+id/update_isi"
+            android:hint="Isi Berita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/update_waktu"
+            android:hint="Waktu Kejadian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="datetime" />
+        <EditText
+            android:id="@+id/update_kronologi"
+            android:hint="Kronologi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_create"
+            android:text="CREATE"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
